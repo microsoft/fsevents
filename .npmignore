@@ -1,4 +1,8 @@
 test/
+.gitignore
+.npmignore
+.travis.yml
+package-lock.json
 build/
-lib/binding/
+node_modules/
 .vscode/
