@@ -1,6 +1,6 @@
 {
   "name": "vscode-fsevents",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "Native Access to Mac OS-X FSEvents",
   "main": "fsevents.js",
   "os": [

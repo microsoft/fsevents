@@ -1,8 +1,11 @@
 {
+  "targets": [
+    { "target_name": "" }
+  ],
   "conditions": [
     ['OS=="mac"', {
       "targets": [{
-        "target_name": "fsevents",
+        "target_name": "fse",
         "sources": ["fsevents.cc"],
         "xcode_settings": {
           "OTHER_LDFLAGS": [
@@ -12,14 +15,6 @@
         "include_dirs": [
           "<!(node -e \"require('nan')\")"
         ]
-      }, {
-        "target_name": "action_after_build",
-        "type": "none",
-        "dependencies": ["fsevents"],
-        "copies": [{
-          "files": ["<(PRODUCT_DIR)/fsevents.node"],
-          "destination": "./"
-        }]
       }]
     }]
   ]
