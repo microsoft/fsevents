@@ -10,7 +10,7 @@ if (process.platform !== 'darwin')
   throw new Error('Module \'fsevents\' is not compatible with platform \'' + process.platform + '\'');
 
 var path = require('path');
-var Native = require('./fsevents.node');
+var Native = require('./build/Release/fse');
 
 var EventEmitter = require('events').EventEmitter;
 var fs = require('fs');
